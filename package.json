@@ -26,9 +26,6 @@
     "url": "https://github.com/RecallGraph/foxx-tracer-reporter-console/issues"
   },
   "homepage": "https://github.com/RecallGraph/foxx-tracer-reporter-console#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "dependencies": {
     "foxx-tracer": "RecallGraph/foxx-tracer#development"
   },
