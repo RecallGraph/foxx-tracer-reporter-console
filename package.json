@@ -1,5 +1,5 @@
 {
-  "name": "foxx-tracer-reporter-console",
+  "name": "@recallgraph/foxx-tracer-reporter-console",
   "version": "0.0.1",
   "description": "A console reporter for the foxx-tracer-collector service that also serves as a template for building other, more complex reporters.",
   "repository": {
@@ -26,6 +26,9 @@
     "url": "https://github.com/RecallGraph/foxx-tracer-reporter-console/issues"
   },
   "homepage": "https://github.com/RecallGraph/foxx-tracer-reporter-console#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "foxx-tracer": "RecallGraph/foxx-tracer#development"
   },
