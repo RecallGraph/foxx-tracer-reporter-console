@@ -1,4 +1,4 @@
-import { SpanData, reporters } from 'foxx-tracer';
+import { reporters, SpanData } from '@recallgraph/foxx-tracer';
 import { inspect } from 'util';
 
 export default class ConsoleReporter implements reporters.Reporter {
