@@ -1,3 +1,4 @@
 import * as reporters from './reporters';
-export { reporters };
+
+export default reporters;
 //# sourceMappingURL=index.d.ts.map
