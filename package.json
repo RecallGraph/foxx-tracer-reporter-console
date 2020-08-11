@@ -1,6 +1,6 @@
 {
   "name": "@recallgraph/foxx-tracer-reporter-console",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A console reporter for the foxx-tracer-collector service that also serves as a template for building other, more complex reporters.",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   "directories": {
     "lib": "dist"
   },
-  "main": "dist/index.js",
+  "main": "dist/ConsoleReporter.js",
   "scripts": {
     "build": "rm -rf dist && tsc -p ."
   },

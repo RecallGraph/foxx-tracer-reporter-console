@@ -1,5 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+'use strict'
+Object.defineProperty(exports, '__esModule', { value: true })
 const foxx_tracer_1 = require('@recallgraph/foxx-tracer')
 const util_1 = require('util')
 
@@ -22,12 +22,13 @@ class ConsoleReporter extends foxx_tracer_1.reporters.Reporter {
     out(util_1.inspect(traces, ConsoleReporter.FORMAT_OPTIONS))
   }
 }
-exports.default = ConsoleReporter;
+
+exports.default = ConsoleReporter
 ConsoleReporter.FORMAT_OPTIONS = {
-    depth: Infinity,
-    maxArrayLength: Infinity,
-    breakLength: Infinity,
-    compact: true,
-    sorted: true
-};
+  depth: Infinity,
+  maxArrayLength: Infinity,
+  breakLength: Infinity,
+  compact: true,
+  sorted: true
+}
 //# sourceMappingURL=ConsoleReporter.js.map
