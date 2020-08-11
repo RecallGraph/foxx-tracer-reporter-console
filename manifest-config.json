@@ -1,6 +1,6 @@
 {
   "description": "Settings for the console reporter.",
   "default": {
-    "level": "debug"
+    "stream": "debug"
   }
 }

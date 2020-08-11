@@ -9,11 +9,14 @@ class ConsoleReporter extends foxx_tracer_1.reporters.Reporter {
   }
 
   report (traces) {
-    const { level } = this.config
+    const { stream } = this.config
     let out
-    switch (level) {
-      case 'info':
+    switch (stream) {
+      case 'log':
         out = console.log.bind(console)
+        break
+      case 'error':
+        out = console.error.bind(console)
         break
       case 'debug':
       default:
@@ -24,11 +27,11 @@ class ConsoleReporter extends foxx_tracer_1.reporters.Reporter {
 }
 
 exports.default = ConsoleReporter
-ConsoleReporter.FORMAT_OPTIONS = {
+ConsoleReporter.FORMAT_OPTIONS = Object.freeze({
   depth: Infinity,
   maxArrayLength: Infinity,
   breakLength: Infinity,
   compact: true,
   sorted: true
-}
+})
 //# sourceMappingURL=ConsoleReporter.js.map

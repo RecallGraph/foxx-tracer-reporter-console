@@ -2,25 +2,29 @@ import { reporters, SpanData } from '@recallgraph/foxx-tracer';
 import { inspect } from 'util';
 
 export default class ConsoleReporter extends reporters.Reporter {
-  private static readonly FORMAT_OPTIONS = {
+  private static readonly FORMAT_OPTIONS = Object.freeze({
     depth: Infinity,
     maxArrayLength: Infinity,
     breakLength: Infinity,
     compact: true,
     sorted: true
-  };
+  });
 
   constructor(namespace: string = 'console') {
     super(namespace);
   }
 
   report(traces: SpanData[][]): void {
-    const { level } = this.config;
+    const { stream } = this.config;
     let out;
 
-    switch (level) {
-      case 'info':
+    switch (stream) {
+      case 'log':
         out = console.log.bind(console);
+        break;
+
+      case 'error':
+        out = console.error.bind(console);
         break;
 
       case 'debug':
