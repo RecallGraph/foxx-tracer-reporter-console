@@ -1,7 +1,7 @@
 import { reporters, SpanData } from '@recallgraph/foxx-tracer';
 import { inspect } from 'util';
 
-export default class ConsoleReporter extends reporters.Reporter {
+export = class ConsoleReporter extends reporters.Reporter {
   private static readonly FORMAT_OPTIONS = Object.freeze({
     depth: Infinity,
     maxArrayLength: Infinity,
