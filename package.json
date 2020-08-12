@@ -1,6 +1,6 @@
 {
   "name": "@recallgraph/foxx-tracer-reporter-console",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A console reporter for the foxx-tracer-collector service that also serves as a template for building other, more complex reporters.",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/RecallGraph/foxx-tracer-reporter-console#readme",
   "dependencies": {
-    "@recallgraph/foxx-tracer": "^2.0.0"
+    "@recallgraph/foxx-tracer": "^2.0.1"
   },
   "devDependencies": {
     "@types/arangodb": "^3.5.6",
