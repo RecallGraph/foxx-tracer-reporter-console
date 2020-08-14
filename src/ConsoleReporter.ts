@@ -1,4 +1,4 @@
-import { reporters, SpanData } from '@recallgraph/foxx-tracer';
+import { reporters, types } from '@recallgraph/foxx-tracer';
 import { inspect } from 'util';
 
 export = class ConsoleReporter extends reporters.Reporter {
@@ -14,7 +14,7 @@ export = class ConsoleReporter extends reporters.Reporter {
     super(namespace);
   }
 
-  report(traces: SpanData[][]): void {
+  report(traces: types.SpanData[][]): void {
     const { stream } = this.config;
     let out;
 

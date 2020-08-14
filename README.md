@@ -20,7 +20,7 @@ This reporter has a single configuration parameter, viz, the console stream to w
     }
 }
 ```
-You can change the stream parameter to one of the other 2 available values if needed.
+You can change the `stream` parameter to one of the other 2 available values if needed.
 
 ## Writing Your Own Reporter
 This package can be used as a template for developing your own reporters.
