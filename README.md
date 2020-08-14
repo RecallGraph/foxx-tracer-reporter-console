@@ -5,7 +5,22 @@ A console reporter for [foxx-tracer-collector](https://github.com/RecallGraph/fo
 This package is already available in the collector by default. See the collector docs for how to enable it.
 
 ## Configuration
-No configuration is required. Just enable it in the collector's configuration.
+This reporter has a single configuration parameter, viz, the console stream to which it should pipe its output. There are 3 options - `log`, `debug` and `error`. If the reporter is installed under the namespace `console` (which is the default), then the `manifest.json` of the collector would have a section like:
+```json
+{
+    "configuration": {
+        "reporters-console": {
+            "type": "json",
+            "required": true,
+            "default": {
+                "stream": "debug"
+            },
+            "description": "Settings for the console reporter."
+        }
+    }
+}
+```
+You can change the stream parameter to one of the other 2 available values if needed.
 
 ## Writing Your Own Reporter
 This package can be used as a template for developing your own reporters.
