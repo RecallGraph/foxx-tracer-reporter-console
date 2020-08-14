@@ -1,10 +1,1 @@
-{
-  "version": 3,
-  "file": "ConsoleReporter.d.ts",
-  "sourceRoot": "",
-  "sources": [
-    "../src/ConsoleReporter.ts"
-  ],
-  "names": [],
-  "mappings": "AAAA,OAAO,EAAa,QAAQ,EAAE,MAAM,0BAA0B,CAAC;;qBAYtC,MAAM;uBAId,QAAQ,EAAE,EAAE,GAAG,IAAI;;;;;;;;;;;;AAbpC,kBAiCC"
-}
+{"version":3,"file":"ConsoleReporter.d.ts","sourceRoot":"","sources":["../src/ConsoleReporter.ts"],"names":[],"mappings":"AAAA,OAAO,EAAa,QAAQ,EAAE,MAAM,0BAA0B,CAAC;;qBAYtC,MAAM;uBAId,QAAQ,EAAE,EAAE,GAAG,IAAI;;;;;;;;;;;;;;AAbpC,kBAiCC"}
