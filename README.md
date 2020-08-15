@@ -2,7 +2,7 @@
 A console reporter for [foxx-tracer-collector](https://github.com/RecallGraph/foxx-tracer-collector).
 
 ## Installation
-This package is already available in the collector by default. See the collector docs for how to enable it.
+This package is already available in the collector by default. See the [collector docs](https://github.com/RecallGraph/foxx-tracer-collector/wiki/Configuration#core-settings) for how to enable it.
 
 ## Configuration
 This reporter has a single configuration parameter, viz, the console stream to which it should pipe its output. There are 3 options - `log`, `debug` and `error`. If the reporter is installed under the namespace `console` (which is the default), then the `manifest.json` of the collector would have a section like:
